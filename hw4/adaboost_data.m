@@ -18,3 +18,20 @@ text(5-0.4, 1, 'x_9', 'fontsize', 20);
 set(gca,'FontSize',20);
 axis([0 6 0 5]);
 set(gca, 'YTick', 0:1:5);
+
+% Draw some axis
+yL = get(gca,'YLim');
+xL = get(gca,'XLim');
+line([.5 .5],yL,'Color','r');
+line([1.5 1.5],yL,'Color','r');
+line([2.5 2.5],yL,'Color','r');
+line([3.5 3.5],yL,'Color','r');
+line([4.5 4.5],yL,'Color','r');
+line([5.5 5.5],yL,'Color','r');
+
+line(xL,[.5 .5],'Color','r');
+line(xL,[1.5 1.5],'Color','r');
+line(xL,[2.5 2.5],'Color','r');
+line(xL,[3.5 3.5],'Color','r');
+line(xL,[4.5 4.5],'Color','r');
+
